@@ -1,0 +1,7 @@
+
+Melhorias
+Ao efetuar o cadastro na pagina de cursos livres: https://online.estacio.br/
+Falta Email com confirmação de cadastro	
+Falta mensagem de sucessotro no cadas e boaas vindas no cadastro
+
+

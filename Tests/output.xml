@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-03-06T09:20:16.870365" rpa="false" schemaversion="5">
+<suite id="s1" name="Cursoslivrescadastro" source="C:\Y_Est\Tests\cursoslivrescadastro.robot">
+<test id="s1-t1" name="Cenário 1: Validando cadastro com sucesso na pagina de cursos livres da Estácio" line="10">
+<kw name="Dado que eu acesse a página de cursos livres da Estácio">
+<msg time="2024-03-06T09:20:17.169741" level="FAIL">No keyword with name 'Dado que eu acesse a página de cursos livres da Estácio' found.</msg>
+<status status="FAIL" start="2024-03-06T09:20:17.169741" elapsed="0.000000">No keyword with name 'Dado que eu acesse a página de cursos livres da Estácio' found.</status>
+</kw>
+<kw name="E clique no botão Cadastre-se">
+<status status="NOT RUN" start="2024-03-06T09:20:17.173917" elapsed="0.000000"/>
+</kw>
+<kw name="E preencha os dados do formulário de Cadastro">
+<status status="NOT RUN" start="2024-03-06T09:20:17.174914" elapsed="0.000000"/>
+</kw>
+<kw name="Quando clico em Criar conta">
+<status status="NOT RUN" start="2024-03-06T09:20:17.179177" elapsed="0.000000"/>
+</kw>
+<kw name="Então acesso a página com o menu de cursos Livres">
+<status status="NOT RUN" start="2024-03-06T09:20:17.182171" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-03-06T09:20:17.154079" elapsed="0.029000">No keyword with name 'Dado que eu acesse a página de cursos livres da Estácio' found.</status>
+</test>
+<status status="FAIL" start="2024-03-06T09:20:16.872360" elapsed="0.312983"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Cursoslivrescadastro">Cursoslivrescadastro</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-03-06T09:20:17.154079" level="ERROR">Error in file 'C:\Y_Est\Tests\cursoslivrescadastro.robot' on line 3: Resource file '.Resources\Settings.robot' does not exist.</msg>
+</errors>
+</robot>

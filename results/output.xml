@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-03-06T14:12:31.193120" rpa="false" schemaversion="5">
+<suite id="s1" name="Y Est" source="C:\Y_Est">
+<suite id="s1-s1" name="Tests" source="C:\Y_Est\Tests">
+<suite id="s1-s1-s1" name="Cursoslivrescadastro" source="C:\Y_Est\Tests\cursoslivrescadastro.robot">
+<test id="s1-s1-s1-t1" name="Cenário 2: Adicionando Curso ao Carrinho de Compras" line="23">
+<kw name="Dado que eu faça login na página de cursos livres da Estácio" owner="Settings">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-06T14:12:31.512628" level="INFO">Opening browser 'chrome' to base url 'https://online.estacio.br/'.</msg>
+<arg>https://online.estacio.br/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-06T14:12:31.512628" elapsed="2.819742"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-06T14:12:39.333771" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-06T14:12:34.332370" elapsed="5.001401"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-06T14:12:39.333771" level="INFO">Clicking element '//html/body/div[3]/header/nav/div/div[3]/div[1]/div/button[1]'.</msg>
+<arg>${entrar_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-06T14:12:39.333771" elapsed="0.237660"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${login_input_email}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-06T14:12:39.571431" elapsed="0.274856"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-06T14:12:39.847326" level="INFO">Clicking element '//*[@id="radix-:R3mph9:"]/div/div/div[2]/form/div/label[1]/div/input'.</msg>
+<arg>${login_input_email}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-06T14:12:39.846287" elapsed="0.092582"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-06T14:12:39.939866" level="INFO">Typing text 'arnaldo_01@hotmail.com' into text field '//*[@id="radix-:R3mph9:"]/div/div/div[2]/form/div/label[1]/div/input'.</msg>
+<arg>${login_input_email}</arg>
+<arg>arnaldo_01@hotmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-06T14:12:39.938869" elapsed="0.135984"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-06T14:12:40.074853" level="INFO">Clicking element '//*[@id="radix-:R3mph9:"]/div/div/div[2]/form/div/label[2]/div/input'.</msg>
+<arg>${senha_login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-06T14:12:40.074853" elapsed="0.100821"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-06T14:12:45.177462" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-06T14:12:40.175674" elapsed="5.001788"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-06T14:12:45.177462" level="INFO">Typing text 'Brasil2005' into text field '//*[@id="radix-:R3mph9:"]/div/div/div[2]/form/div/label[2]/div/input'.</msg>
+<arg>${senha_login}</arg>
+<arg>Brasil2005</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-06T14:12:45.177462" elapsed="0.130453"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-06T14:12:45.307915" level="INFO">Clicking element '//html/body/div[10]/div/div/div[2]/form/div/button[2]'.</msg>
+<arg>${login_entrar_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-06T14:12:45.307915" elapsed="0.112875"/>
+</kw>
+<status status="PASS" start="2024-03-06T14:12:31.512628" elapsed="13.908162"/>
+</kw>
+<kw name="Quando adiciono um curso no carrinho de compras" owner="Settings">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${curso}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-06T14:12:45.421788" elapsed="1.152325"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-06T14:12:46.575114" level="INFO">Clicking element '//html/body/div[3]/main/section[1]/article/div[2]/div/div/div[3]/a/section/div/article'.</msg>
+<arg>${curso}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-06T14:12:46.574113" elapsed="0.117354"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${adicionar_carrinho}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-06T14:12:46.691467" elapsed="0.392743"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-06T14:12:47.084210" level="INFO">Clicking element '//html/body/div[3]/main/article/section[2]/div/article/div[3]/button[2]/span'.</msg>
+<arg>${adicionar_carrinho}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-06T14:12:47.084210" elapsed="0.103198"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-06T14:12:57.188036" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-06T14:12:47.187408" elapsed="10.002581"/>
+</kw>
+<status status="PASS" start="2024-03-06T14:12:45.421788" elapsed="11.768201"/>
+</kw>
+<kw name="Então o carrinho deve conter o curso adicionado" owner="Settings">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${curso_adicionado}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-03-06T14:12:57.189989" elapsed="0.049693"/>
+</kw>
+<status status="PASS" start="2024-03-06T14:12:57.189989" elapsed="0.049693"/>
+</kw>
+<status status="PASS" start="2024-03-06T14:12:31.512628" elapsed="25.727054"/>
+</test>
+<status status="PASS" start="2024-03-06T14:12:31.234034" elapsed="26.005648"/>
+</suite>
+<status status="PASS" start="2024-03-06T14:12:31.228347" elapsed="26.027820"/>
+</suite>
+<status status="PASS" start="2024-03-06T14:12:31.198887" elapsed="26.057280"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Y Est">Y Est</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Tests">Y Est.Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Cursoslivrescadastro">Y Est.Tests.Cursoslivrescadastro</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
