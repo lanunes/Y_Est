@@ -1,0 +1,10 @@
+===============================================================================
+Configurações utilizadas para construir a suite de testes
+===============================================================================
+Python 3.12.1
+Robot 7.0
+Selenium Library 6.2.0
+ChromeDriver 121.0
+IDE - VSCode
+
+
